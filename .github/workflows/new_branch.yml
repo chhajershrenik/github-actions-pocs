@@ -1,0 +1,8 @@
+on:
+  workflow_dispatch: # Launch manually
+  pull_request: #Run it when a PR is created to a branch
+    branches:
+      - master
+  push: # Run it when a push is made to a branch
+    branches:
+      - current_branch_name
